@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Fonts</title>
+
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        h1 {
+            font-family: 'Roboto Flex';
+            font-variation-settings: 'wght' 200;
+            /* font-variation-settings: 'wdth' 80; */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Aula de Web Fonts</h1>
+    <p>Lorem ipsum dolor Lorem ipsum dolor</p>
+
+    <!-- <div>
+        <p>Weight</p>
+        <input type="range" min="100" max="1000" onmousemove="handleChange()">
+        <span></span>
+    </div> -->
+
+    <div>
+        <p>Width</p>
+        <input type="range" min="10" max="200" onmousemove="handleChange()">
+        <span></span>
+    </div>
+    
+    <script>
+        function handleChange(){
+            const value = document.querySelector('input[type=range]').value;
+
+            document.querySelector('span').innerHTML = value;
+
+            document.querySelector('h1').style.fontStretch = `${Number(value)}%`;
+        }
+    </script>
+</body>
+
+</html>

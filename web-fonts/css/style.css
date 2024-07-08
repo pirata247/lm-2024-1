@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Roboto2';
+    src: url('../Roboto/Roboto-Regular.ttf');
+}
+
+h1 {
+    font-family: 'Roboto2';
+    font-style: italic;
+}
+
+p {
+    font-family: 'Roboto2';
+    font-weight: 400;
+}
